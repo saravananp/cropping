@@ -1,0 +1,13 @@
+
+
+<p id="notice"><%= notice %></p>
+<p>
+  <b>Name:</b>
+  <%= @test.name %>
+</p>
+<p>
+  <b>image:</b>
+  <%= image_tag @test.image.url(:large) %>
+</p>
+<%= link_to 'Edit', edit_test_path(@test) %> |
+<%= link_to 'Back', tests_path %>
